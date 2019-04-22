@@ -22,7 +22,7 @@ class Blog(db.Model):
 @app.route('/')
 def index():
 
-    return render_template('base.html')
+    return redirect('/blog')
 
 @app.route('/newpost', methods=['POST', 'GET'])
 def new_post():
